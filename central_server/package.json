@@ -1,0 +1,32 @@
+{
+  "name": "center",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "central" : "node src/server.js",
+    "auth" : "cd ../auth && npm run dev",
+    "tourist" : "cd ../tourist && npm run dev",
+    "m_center" : "cd ../m_center && npm run dev",
+    "destination" : "cd ../destination && npm run dev",
+    "appointment" : "cd ../appointment && npm run dev",
+
+    
+
+    "ins_all" : "npm install",   
+    "all": "npm-run-all --parallel central "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "express-http-proxy": "^2.0.0",
+    "nodemon": "^3.1.0",
+    "npm-run-all": "^4.1.5"
+  }
+}

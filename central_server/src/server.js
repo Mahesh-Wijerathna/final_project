@@ -20,5 +20,5 @@ app.use('/',(req,res,next) => {
     return res.status(200).json({message: 'Welcome to the central server'});
 });
 app.listen(4000, () => {
-    console.log('Central server running on port 4000');
+    console.log('Central server running on port 4000 ...');
 });

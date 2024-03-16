@@ -14,7 +14,7 @@
     "appointment" : "cd ../appointment && npm run dev",
 
     "ins_central" : "npm install",
-    "ins_auth" : "cd ../auth && npm install",
+    "ins_auth" : "cd ../auth && npm run inst",
 
 
     "dev" : "npm-run-all --parallel ins_central ins_auth ",   

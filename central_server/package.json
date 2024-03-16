@@ -4,21 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server.js",
+    "start": "node src/server.js"
     
-    "central" : "node src/server.js",
-    "auth" : "cd ../auth && npm start",
-    "tourist" : "cd ../tourist && npm run dev",
-    "m_center" : "cd ../m_center && npm run dev",
-    "destination" : "cd ../destination && npm run dev",
-    "appointment" : "cd ../appointment && npm run dev",
 
-    "ins_central" : "npm install",
-    "ins_auth" : "cd ../auth && npm run inst",
-
-
-    "dev" : "npm-run-all --parallel ins_central ins_auth ",   
-    "all": "npm-run-all --parallel central auth"
   },
   "keywords": [],
   "author": "",

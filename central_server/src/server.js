@@ -12,7 +12,7 @@ app.use(cors());
 
 
 
-app.use('/auth'       , proxy('https://final-project-xp60.onrender.com:10001'));
+app.use('/auth'       , proxy('https://auth-abg5.onrender.com'));
 app.use('/tourist'    , proxy('http://localhost:4002'));
 app.use('/m_center'   , proxy('http://localhost:4003'));
 app.use('/destination', proxy('http://localhost:4004'));

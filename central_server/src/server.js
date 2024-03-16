@@ -1,10 +1,10 @@
-require('dotenv').config();
+//require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const proxy = require('express-http-proxy');
 const verify = require('./verify');
 
-const port = process.env.PORT || 10000;
+//const port = process.env.PORT || 10000;
 const app = express();
 app.use(cors());
 
@@ -20,6 +20,6 @@ app.use('/appointment', proxy('http://localhost:4005'));
 app.use('/',(req,res,next) => {
     return res.status(200).json({message: 'Welcome to the central server'});
 });
-app.listen(port, () => {
-    console.log(`Central server running on port ${port} ...`);
+app.listen(4000, () => {
+    console.log(`Central server running on port 4000 ...`);
 });

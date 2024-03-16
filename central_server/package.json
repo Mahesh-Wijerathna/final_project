@@ -17,8 +17,8 @@
     "ins_auth" : "cd ../auth && npm run inst",
 
 
-    "dev" : "npm-run-all --parallel ins_auth ",   
-    "all": "npm-run-all --parallel auth"
+    "dev" : "npm-run-all --parallel ins_central ins_auth ",   
+    "all": "npm-run-all --parallel central auth"
   },
   "keywords": [],
   "author": "",
